@@ -1,31 +1,25 @@
 *{
-    padding: 10px;
+    padding: 5px;
 }
 /* this is the header */
 header h1{
-    color:grey; 
-    background-color: yellow;
-    
-   
+    color:black; 
+    background-color: forestgreen;
+    padding: 100px;  
 }
+header nav {
+    display: flex;
+    justify-content: right;
+}
+
 header nav li{
     color: blue;
-    background-color: fuchsia;
-    
+    background-color: bisque;
     display: inline;
+    position: relative;
 }
 
 /* this is where each sections goes */
-section {
-    display: flex;
-    justify-content: center;
-}
-.big {
-   width: 300px;
-   height: 100px;
-   padding: 50px;
-   border: solid salmon; 
-}
 main {
     display: flex;
     width: auto;
@@ -33,7 +27,38 @@ main {
     flex-wrap:wrap;
     background: linear-gradient(slateblue,saddlebrown);   
 }
-main section {
+.big-card{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 900px;
+    border: solid black;
+    padding: 20px;
+    margin: 20px;
+}
+.small-card{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width:250px;
+    border: solid pink;
+    padding: 20px;
+    margin: 20px;
+}
+main h2 { 
+    color: black;
+    
+    
+}
+main h3 {
+    color: pink;
+}
+main p {
+    border: solid;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+/* main section {
     width: 450px;
     height: 450px;
     flex-direction: column;
@@ -58,7 +83,7 @@ main p {
     border: solid;
     margin: 25px;
     margin-bottom: 150px;
-}
+} */
 
 
 @media screen and (max-width: 900px) {
