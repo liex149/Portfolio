@@ -1,0 +1,77 @@
+*{
+    padding: 10px;
+}
+/* this is the header */
+header h1{
+    color:grey; 
+    background-color: yellow;
+    
+   
+}
+header nav li{
+    color: blue;
+    background-color: fuchsia;
+    
+    display: inline;
+}
+
+/* this is where each sections goes */
+section {
+    display: flex;
+    justify-content: center;
+}
+.big {
+   width: 300px;
+   height: 100px;
+   padding: 50px;
+   border: solid salmon; 
+}
+main {
+    display: flex;
+    width: auto;
+    height: 25%;
+    flex-wrap:wrap;
+    background: linear-gradient(slateblue,saddlebrown);   
+}
+main section {
+    width: 450px;
+    height: 450px;
+    flex-direction: column;
+    color: black; 
+    font-size: 25px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 20px;
+    border: dotted;
+    
+}
+main h2 { 
+    color: black;
+    
+    
+}
+main h3 {
+    color: pink;
+    border: indigo;
+}
+main p {
+    border: solid;
+    margin: 25px;
+    margin-bottom: 150px;
+}
+
+
+@media screen and (max-width: 900px) {
+    section,
+    div {
+      flex-direction: column;
+      background-color: slateblue;
+    }
+  }
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+      background-color: saddlebrown;
+    }
+  }
