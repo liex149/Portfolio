@@ -1,102 +1,121 @@
 *{
     padding: 5px;
+    box-sizing: border-box;
+    /* background: burlywood; */
 }
+
 /* this is the header */
 header h1{
     color:black; 
-    background-color: forestgreen;
+    background-color: pink;
     padding: 100px;  
+    border-radius: 20px;
 }
 header nav {
     display: flex;
     justify-content: right;
 }
-
 header nav li{
     color: blue;
     background-color: bisque;
     display: inline;
     position: relative;
 }
-
 /* this is where each sections goes */
-main {
-    display: flex;
-    width: auto;
-    height: 25%;
-    flex-wrap:wrap;
-    background: linear-gradient(slateblue,saddlebrown);   
-}
-.big-card{
-    display: flex;
-    justify-content: center;
-    height: 450px;
-    width: 900px;
-    border: solid black;
-    padding: 20px;
-    margin: 20px;
-}
-.small-card{
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    width:250px;
-    border: solid pink;
-    padding: 20px;
-    margin: 20px;
-}
-main h2 { 
-    color: black;
-    
-    
-}
-main h3 {
-    color: pink;
-}
-main p {
-    border: solid;
-    margin: 0px;
-    margin-bottom: 0px;
-}
-/* main section {
-    width: 450px;
-    height: 450px;
+main section {
+    display:flex;
     flex-direction: column;
-    color: black; 
-    font-size: 25px;
-    text-align: center;
-    border-radius: 25px;
+    width: auto;
+    height: auto;
+    float:top;
+    background: beige;
+    align-items: center;
+
+}
+#About-Me{
+    font-size: 40px;
+}
+.word{
+    font-size: 30px;
+}
+main section{
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border: dotted palevioletred;
+   
+}
+section{
+    display: flex;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+}
+section aside div{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-height: 300px;
+    
+}
+.pro {
+    background: salmon;
     margin: 20px;
-    border: dotted;
+    display: flex;
+    flex-direction:column;
+    display: flex;
+}
+.project-title{
+    font-size: 100px;
+    border-right-style: solid;
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: monospace;
     
 }
-main h2 { 
-    color: black;
-    
-    
+.divh2 {
+    display: flex;
+    flex:wrap;
+    width: auto;
+    background-color: #fff;
+    font-size: 30px;
+    font-family: monospace;
+    border: dotted lightsalmon;
+
 }
-main h3 {
-    color: pink;
-    border: indigo;
+.div-p{
+    display: flex;
+    flex-wrap: wrap;
+    border: dotted grey;
+    /* margin: 0px;
+    margin-bottom: 0px; */
+    font-size: 20px;
 }
-main p {
-    border: solid;
-    margin: 25px;
-    margin-bottom: 150px;
-} */
+    
+
+ 
+
+footer {
+    display: flex;
+    background-color: crimson;
+    flex-direction: column;
+    align-items: center;
+}
 
 
-@media screen and (max-width: 900px) {
-    section,
-    div {
+@media screen and (max-width: 800px) {
+    section {
       flex-direction: column;
       background-color: slateblue;
     }
-  }
+}
 @media screen and (max-width: 768px) {
-    main,
-    nav {
+    main {
       flex-direction: column;
       background-color: saddlebrown;
     }
-  }
+  }  
+  
+  
