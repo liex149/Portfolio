@@ -105,9 +105,9 @@ section aside div{
 }
 
 .widecard {
-    
+    /* background-size: 500px;  */
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 .divh2 {
     display: flex;
@@ -121,7 +121,11 @@ section aside div{
 }
 .picsize{
     width: 100%;
-    justify-content: center ;
+    max-height: 250px;
+    background-image: url(../assets/typewriter.jpg);
+    background-position: top; 
+    background-repeat: no-repeat; 
+    background-size:cover;
 }
 .picsize2 {
 
