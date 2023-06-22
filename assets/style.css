@@ -1,15 +1,37 @@
 *{
     padding: 5px;
     box-sizing: border-box;
-    /* background: burlywood; */
 }
 
+header h1{
+    font-size: 60px;
+    font-family: monospace;
+    nav-right: 10%;
+    border: solid lightgray;  
+}
+.quote {
+    justify-content: flex-end;
+}
+header h1 p {
+    background-color: lightgray;
+    
+}
+header img {
+    border-radius: 50%;
+    margin:10px;
+    border: solid lightgrey;
+    
+   
+}
 /* this is the header */
 header h1{
     color:black; 
-    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
     padding: 100px;  
     border-radius: 20px;
+    background-image: url(rock.jpg);
 }
 header nav {
     display: flex;
@@ -20,6 +42,7 @@ header nav li{
     background-color: bisque;
     display: inline;
     position: relative;
+    font-size: 30px;
 }
 /* this is where each sections goes */
 main section {
@@ -57,14 +80,16 @@ section aside div{
     flex-direction: column;
     width: 350px;
     min-height: 300px;
+    overflow: hidden;
     
 }
 .pro {
-    background: salmon;
+    background: beige;
     margin: 20px;
     display: flex;
     flex-direction:column;
     display: flex;
+    justify-content: center;
 }
 .project-title{
     font-size: 100px;
@@ -75,46 +100,71 @@ section aside div{
     font-family: monospace;
     
 }
+.widecard {
+    width: 500px;
+}
 .divh2 {
     display: flex;
     flex:wrap;
     width: auto;
+    justify-content: center;
     background-color: #fff;
     font-size: 30px;
     font-family: monospace;
-    border: dotted lightsalmon;
-
+    
+}
+.picsize{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    width: 479px;
+}
+.picsize2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    height: 252px;
+    width: 330px;
 }
 .div-p{
     display: flex;
     flex-wrap: wrap;
-    border: dotted grey;
+    justify-content: center;
+    
+    
     /* margin: 0px;
     margin-bottom: 0px; */
     font-size: 20px;
 }
     
-
- 
-
 footer {
-    display: flex;
-    background-color: crimson;
-    flex-direction: column;
-    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    
+    
 }
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none;
+} 
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     section {
       flex-direction: column;
-      background-color: slateblue;
+      justify-content: center;
+      background-color: whitesmoke;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     main {
       flex-direction: column;
-      background-color: saddlebrown;
+      justify-content: center;
+      background-color: wheat;
     }
   }  
   
