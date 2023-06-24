@@ -1,132 +1,81 @@
-* {
-    padding: 0px;
-}
+/* Header/introduction */
 
 header h1 {
-    font-size: 60px;
-    font-family: monospace;
-    nav-right: 10%;
-    border: solid lightgray;
-}
-
-.quote {
-    justify-content: flex-end;
-}
-
-header h1 p {
-    background-color: lightgray;
-
-}
-
-header img {
-    border-radius: 50%;
-    margin: 10px;
-    border: solid lightgrey;
-
-
-}
-
-/* this is the header */
-header h1 {
-    color: black;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    background-color: lightgray;
-    padding: 100px;
-    border-radius: 20px;
-    background-image: url(rock.jpg);
+    padding: 5px;
+    border-radius: 50px 0px;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    border: solid lightgray;
+    color: lightblue;
+    background-image: url(header.jpg);
 }
-
+.quote1 {
+    font-size: 60px;
+}
+.quote2 {
+    font-size: 30px;
+}
+header h1 p {
+    background-color: transparent;
+}
+header img {
+    border-radius: 20%;
+    height: 300px;
+    width: 400px;
+    border: solid lightgrey;
+}
 header nav {
     display: flex;
     justify-content: right;
 }
-
 header nav li {
-    color: blue;
-    background-color: bisque;
     display: inline;
     position: relative;
     font-size: 30px;
+    padding: 10px;
 }
 
-/* this is where each sections goes */
+/* This box is the About Me*/
 /* line 34 */
 main section {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
-    float: top;
-    background: beige;
     align-items: center;
-
-}
-
-/* line 36 */
-#About-Me {
-    font-size: 40px;
-}
-
-/* line 37 */
-.word {
-    font-size: 30px;
-    text-align: center;
-}
-
-/* line 34 */
-main section {
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 10px;
-    border-radius: 60px;
+    border-radius: 10px 20px;
+    width: auto;
+    height: auto;
+    background: rgb(221, 223, 221);
 }
-
-/* line 35  &  41 */
+#About-Me {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.word {
+    font-size: 20px;
+    text-align: center;
+}
+/* This section is about each project */
 section {
     display: flex;
 }
-
-/* line 42 */
 aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
-
-/* this starts at line 42 */
-.aside-1 {
-    background-color: bisque;
-    display: block;
-    box-sizing: border-box;
-    border-right-style: solid;
-    border-radius: 30px;
-    padding: 5px;
-
-}
-
-/* this starts at line 41 */
 section aside div {
     /* display: flex; */
     /* flex-wrap: wrap; */
     width: 100%;
     min-height: 300px;
     overflow: hidden;
-
 }
-
-/* this starts at line 55 */
-.pro {
-    background: salmon;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 20px;
-}
-
-/* this is line 43 */
 .verttext {
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -136,8 +85,22 @@ section aside div {
     border-radius: 30px;
     min-height: 200px;
 }
-
-/* this is line 48 */
+.aside-1 {
+    background-color: bisque;
+    display: block;
+    box-sizing: border-box;
+    border-right-style: solid;
+    border-radius: 30px;
+    padding: 5px;
+}
+.pro {
+    background: beige;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+}
 .widecard {
     /* background-size: 500px;  */
     height: auto;
@@ -148,7 +111,7 @@ section aside div {
 .divh2 {
     display: flex;
     flex-wrap: wrap;
-    
+
     width: auto;
     justify-content: center;
     background-color: #fff;
@@ -156,40 +119,31 @@ section aside div {
     font-family: monospace;
 
 }
-
-/* this is line 49 */
-.picsize {
-    width: 100%;
-    max-height: 250px;
-    background-image: url(../assets/typewriter.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* this starts at line 56 */
-.picsize2 {
-    padding: 10px;
-    height: 252px;
-    width: 330px;
-}
-
-/* this starts at line 58 */
 .div-p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 20px;
 }
-
-/* this starts at line 85 */
+.picsize {
+    width: 100%;
+    max-height: 250px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/typewriter.jpg); 
+}
+.picsize2 {
+    padding: 20px;
+    height: 252px;
+    width: 330px;
+}
+/* this is the footer*/
 footer {
     background-color: black;
     color: white;
     font-size: 25px;
 }
-
-/* this starts at line 88 */
 footer ul {
     display: flex;
     flex-direction: row;
@@ -198,7 +152,7 @@ footer ul {
     list-style: circle;
     padding: 10px;
 }
-
+/* this occurs when shrinking the browser */
 @media screen and (max-width: 786px) {
     .verttext {
         display: flex;
@@ -210,16 +164,14 @@ footer ul {
         border: solid black;
     }
 }
-
 @media screen and (max-width: 786px) {
     section {
-        background-color: pink;
+        background-color: rgb(227, 227, 211);
         display: flex;
         flex-flow: column wrap;
-        
+        border-radius: 30px;
     }
 }
-
 @media screen and (max-width: 786px) {
     main {
         display: flex;
@@ -227,42 +179,8 @@ footer ul {
     }
 }
 @media screen and (max-width: 786px) {
-    footer ul li{
+    footer ul li {
         display: flex;
-        flex-flow: column ;
+        flex-flow: column;
     }
 }
-/* This is the top intro */
-
-/* @media screen and (max-width: 786px) {
-    h1 {
-        display: flex;
-        flex-flow: column wrap;
-        /* justify-content: center; 
-        /* background-color: lightgoldenrodyellow;
-        writing-mode: horizontal-tb;
-        height: 100px;
-        border: solid black;  
-    }
-} 
-/*
-
-@media screen and (min-width: 786px) {
-    section {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        background-color: whitesmoke;
-    }
-} */
-
-/* @media screen and (max-width: 575px) {
-    .verttext {
-        background-color: wheat;
-        display: flex;
-        flex-flow: column wrap;
-        writing-mode: horizontal-tb;
-        font-size: 30px;
-        text-align: center;
-    }
-} */
