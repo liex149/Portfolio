@@ -1,177 +1,268 @@
-*{
-    padding: 5px;
-    
-    
+* {
+    padding: 0px;
 }
 
-header h1{
+header h1 {
     font-size: 60px;
     font-family: monospace;
     nav-right: 10%;
-    border: solid lightgray;  
+    border: solid lightgray;
 }
+
 .quote {
     justify-content: flex-end;
 }
+
 header h1 p {
     background-color: lightgray;
-    
+
 }
+
 header img {
     border-radius: 50%;
-    margin:10px;
+    margin: 10px;
     border: solid lightgrey;
-    
-   
+
+
 }
+
 /* this is the header */
-header h1{
-    color:black; 
+header h1 {
+    color: black;
     display: flex;
     flex-wrap: wrap;
     background-color: lightgray;
-    padding: 100px;  
+    padding: 100px;
     border-radius: 20px;
     background-image: url(rock.jpg);
 }
+
 header nav {
     display: flex;
     justify-content: right;
 }
-header nav li{
+
+header nav li {
     color: blue;
     background-color: bisque;
     display: inline;
     position: relative;
     font-size: 30px;
 }
+
 /* this is where each sections goes */
+/* line 34 */
 main section {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
-    float:top;
+    float: top;
     background: beige;
     align-items: center;
 
 }
-#About-Me{
+
+/* line 36 */
+#About-Me {
     font-size: 40px;
 }
-.word{
+
+/* line 37 */
+.word {
     font-size: 30px;
+    text-align: center;
 }
-main section{
+
+/* line 34 */
+main section {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    border: dotted palevioletred;
-   
+    border-radius: 60px;
 }
-section{
+
+/* line 35  &  41 */
+section {
     display: flex;
 }
-aside{
+
+/* line 42 */
+aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-section aside div{
-    display: flex;
-    flex-wrap: wrap;
-    width: 350px;
-    min-height: 300px;
-    overflow: hidden;
     
 }
+
+/* this starts at line 42 */
+.aside-1 {
+    background-color: bisque;
+    display: block;
+    box-sizing: border-box;
+    border-right-style: solid;
+    border-radius: 30px;
+    padding: 5px;
+
+}
+
+/* this starts at line 41 */
+section aside div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+
+}
+
+/* this starts at line 55 */
 .pro {
-    background: beige;
-    width:  auto;
+    background: salmon;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 20px;
 }
-.project-title{
-    font-size: 150px;
-    border-right-style: solid;
-    display: flex;
-    padding: 5px;
-    margin-left: 50px;
+
+/* this is line 43 */
+.verttext {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 120px;
+    font-family: sans-serif;
+    align-items: center;
     border-radius: 30px;
-    font-family: monospace;
-    
+    min-height: 200px;
 }
 
+/* this is line 48 */
 .widecard {
     /* background-size: 500px;  */
     height: auto;
     width: 100%;
 }
+
+/* this starts at line 57 */
 .divh2 {
     display: flex;
     flex-wrap: wrap;
+    
     width: auto;
     justify-content: center;
     background-color: #fff;
     font-size: 30px;
     font-family: monospace;
-    
+
 }
-.picsize{
+
+/* this is line 49 */
+.picsize {
     width: 100%;
     max-height: 250px;
     background-image: url(../assets/typewriter.jpg);
-    background-position: top; 
-    background-repeat: no-repeat; 
-    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.picsize2 {
 
-    padding-top: 15px;
+/* this starts at line 56 */
+.picsize2 {
+    padding: 10px;
     height: 252px;
     width: 330px;
 }
-.div-p{
+
+/* this starts at line 58 */
+.div-p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    
-    /* margin: 0px;
-    margin-bottom: 0px; */
     font-size: 20px;
 }
-    
+
+/* this starts at line 85 */
 footer {
     background-color: black;
     color: white;
     font-size: 25px;
-    
-    
 }
+
+/* this starts at line 88 */
 footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
-    list-style: none;
-} 
+    /* margin: auto; */
+    list-style: circle;
+    padding: 10px;
+}
 
-@media screen and (max-width: 900px) {
-    section {
-      flex-direction: column;
-      justify-content: center;
-      background-color: whitesmoke;
+@media screen and (max-width: 786px) {
+    .verttext {
+        display: flex;
+        flex-flow: column wrap;
+        /* justify-content: center; */
+        background-color: lightgoldenrodyellow;
+        writing-mode: horizontal-tb;
+        height: 50px;
+        border: solid black;
     }
 }
-@media screen and (max-width: 800px) {
-    main {
-      flex-direction: column;
-      justify-content: center;
-      background-color: wheat;
+
+@media screen and (max-width: 786px) {
+    section {
+        background-color: pink;
+        display: flex;
+        flex-flow: column wrap;
+        
     }
-  }  
-  
-  
+}
+
+@media screen and (max-width: 786px) {
+    main {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+@media screen and (max-width: 786px) {
+    footer ul li{
+        display: flex;
+        flex-flow: column ;
+    }
+}
+/* This is the top intro */
+
+/* @media screen and (max-width: 786px) {
+    h1 {
+        display: flex;
+        flex-flow: column wrap;
+        /* justify-content: center; 
+        /* background-color: lightgoldenrodyellow;
+        writing-mode: horizontal-tb;
+        height: 100px;
+        border: solid black;  
+    }
+} 
+/*
+
+@media screen and (min-width: 786px) {
+    section {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        background-color: whitesmoke;
+    }
+} */
+
+/* @media screen and (max-width: 575px) {
+    .verttext {
+        background-color: wheat;
+        display: flex;
+        flex-flow: column wrap;
+        writing-mode: horizontal-tb;
+        font-size: 30px;
+        text-align: center;
+    }
+} */
