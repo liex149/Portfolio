@@ -86,7 +86,7 @@ section aside div {
     min-height: 200px;
 }
 .aside-1 {
-    background-color: bisque;
+    background-color: ghostwhite;
     display: block;
     box-sizing: border-box;
     border-right-style: solid;
@@ -94,7 +94,7 @@ section aside div {
     padding: 5px;
 }
 .pro {
-    background: beige;
+    background: slategray;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -102,36 +102,38 @@ section aside div {
     margin: 20px;
 }
 .widecard {
-    /* background-size: 500px;  */
-    height: auto;
     width: 100%;
-}
+    height: 200px;
+    padding: 50px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
 
-/* this starts at line 57 */
+    background-image: url(../assets/typewriter.jpg); 
+}
 .divh2 {
     display: flex;
     flex-wrap: wrap;
-
     width: auto;
     justify-content: center;
-    background-color: #fff;
+    background-color: lightgrey;
     font-size: 30px;
-    font-family: monospace;
-
+    font-family:'Times New Roman', Times, serif;
+}
+.word2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+    color:whitesmoke;
 }
 .div-p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 20px;
-}
-.picsize {
-    width: 100%;
-    max-height: 250px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../assets/typewriter.jpg); 
+    color:black;
 }
 .picsize2 {
     padding: 20px;
