@@ -1,17 +1,24 @@
 /* Header/introduction */
-
 header h1 {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 2px;
     border-radius: 50px 0px;
     font-size: 60px;
     font-family:'Times New Roman', Times, serif;
     border: solid lightgray;
     color: lightblue;
     background-image: url(header.jpg);
+}
+a{
+    all:unset;
+    color: black;
+}
+.button {
+    cursor: pointer;
+    background-color: ghostwhite; 
 }
 .quote1 {
     font-size: 60px;
@@ -35,12 +42,10 @@ header nav {
 header nav li {
     display: inline;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
 }
-
 /* This box is the About Me*/
-/* line 34 */
 main section {
     display: flex;
     flex-direction: column;
@@ -70,8 +75,6 @@ aside {
     justify-content: center;
 }
 section aside div {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     width: 100%;
     min-height: 300px;
     overflow: hidden;
@@ -79,7 +82,7 @@ section aside div {
 .verttext {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    font-size: 120px;
+    font-size: 90px;
     font-family: sans-serif;
     align-items: center;
     border-radius: 30px;
@@ -101,32 +104,36 @@ section aside div {
     flex-direction: column;
     margin: 20px;
 }
+/* This is the first project */
 .widecard {
     width: 100%;
     height: 200px;
-    padding: 50px;
-    background-position: top;
+    padding: 5px;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-
-    background-image: url(../assets/typewriter.jpg); 
-}
-.divh2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    justify-content: center;
-    background-color: lightgrey;
-    font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
+    background-image: url(../assets/sunset.jpg); 
 }
 .word2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    padding-top: 50px;
     font-size: 25px;
-    color:whitesmoke;
+    color:ghostwhite;
+    font-weight: bold;
+}
+/* this is the rest of the projects */
+.divh2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
 }
 .div-p {
     display: flex;
@@ -150,7 +157,6 @@ footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* margin: auto; */
     list-style: circle;
     padding: 10px;
 }
@@ -159,30 +165,48 @@ footer ul {
     .verttext {
         display: flex;
         flex-flow: column wrap;
-        /* justify-content: center; */
-        background-color: lightgoldenrodyellow;
+        background-color: gray;
         writing-mode: horizontal-tb;
-        height: 50px;
+        height: 50px;  
         border: solid black;
+    }
+}
+@media screen and (max-width: 786px) { 
+    .word2 {
+        color:black;
+
+    }
+}
+@media screen and (max-width: 786px) { 
+    .divh2 {
+        color:black;
     }
 }
 @media screen and (max-width: 786px) {
     section {
-        background-color: rgb(227, 227, 211);
+        background-color: whitesmoke;
         display: flex;
         flex-flow: column wrap;
         border-radius: 30px;
+        padding-top: 10px;
     }
 }
 @media screen and (max-width: 786px) {
     main {
         display: flex;
         flex-flow: column wrap;
+        
     }
 }
 @media screen and (max-width: 786px) {
     footer ul li {
         display: flex;
         flex-flow: column;
+    }
+}
+@media screen and (max-width: 786px) {
+    header nav {
+        display: flex;
+        justify-content: center;
     }
 }
