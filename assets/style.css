@@ -128,8 +128,9 @@ section aside div {
     padding-top: 50px;
     font-size: 25px;
     color:ghostwhite;
-    font-weight: bold;
+    font-weight: bold;  
 }
+
 /* this is the rest of the projects */
 .divh2 {
     display: flex;
@@ -139,6 +140,10 @@ section aside div {
     background-color: transparent;
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
+    border: dotted black;
+    margin: 10px;
+    
+    
 }
 .div-p {
     display: flex;
