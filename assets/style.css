@@ -237,10 +237,9 @@ footer ul {
     }
 }
 @media screen and (max-width: 768px) {
-    footer ul li {
+    footer ul {
         display: flex;
-        flex-flow: wrap column;
+        flex-flow: column wrap;
         width: 100%;
-        justify-content: space-between;
     }
 }
