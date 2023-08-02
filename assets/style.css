@@ -20,6 +20,9 @@ a{
     cursor: pointer;
     background-color: ghostwhite; 
 }
+.pointer {
+    cursor: pointer;
+}
 .quote1 {
     font-size: 60px;
 }
